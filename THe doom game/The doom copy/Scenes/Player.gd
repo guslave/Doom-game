@@ -1,7 +1,14 @@
 extends KinematicBody
 
+#basic vairables
 var velocity = Vector3()
+var gravity = -30
+var mouse_sensitivity = 0.002
 
+#gun variables
+
+
+#functions
 func _ready():
 	Input.set.mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -12,12 +19,22 @@ func get_input():
 	if Input.is_action_pressed("move_back"):
 		input_dir += global_transform.basis.2
 	if Input.is_action_pressed("strafe_left"):
-		input_dir += global_transform
+		input_dir += global_transform.x
+	if Input.is_action_pressed("strage_right"):
+		input_dir += global_transform.basis.x
+	#input_dir = input_dir.normalized() #add to cancel strafe running
+	return input_dir
+		
 func _unhandled_input(event):
 	pass
 
 func _physics_process(delta):
-	pass
+	#gravity
+	velocity += gravity * delta
+	var desired_velocity = get_input() * max_speed
+	velocity.x = desired_velocity.x
+	velocity.z = desired_velocity.z
+	velocity = move_and_slide(velocity, Vector3.UP, true)
 	
 func change_gun(gun):
 	pass

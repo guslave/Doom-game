@@ -1,0 +1,54 @@
+================================================================
+Title                   : NiGHTMARE texture WAD 2
+
+Filename                : NMTEXT2.WAD
+
+Author                  : Nick Baker  
+		  
+Email Address           : nbaker1@titus.force9.co.uk
+
+Description		: 8 animated textures: Blood drips, a brown
+			  slime fall, a forcefield, fire, a lava fall,
+			  snow, water drips and a waterfall.
+
+			  Note that there are no PNAMES or TEXTURE1
+			  resources.  This is so that you can chose
+			  between replacing existing animated textures,
+			  or creating new ones via BOOM or DOSDoom.
+
+Additional Credits to   : The author of Frost Bitten for the snow idea.
+			  
+			  
+================================================================
+
+* Play Information *
+
+Episode and Level #     : N/A
+Single Player           : N/A
+Cooperative 2-4 Player  : N/A
+Deathmatch 2-4 Player   : N/A
+Difficulty Settings     : N/A
+New Sounds              : No
+New Graphics            : Yes
+New Music               : No
+Demos Replaced          : None
+
+* Construction *
+
+Base                    : Most of them are based on existing Doom(2)
+			  textures.  A few from scratch.
+                          
+Editor(s) used          : WinTex v4.3
+			  Paint Shop Pro v4.10 - v5.05
+
+Known Bugs              : None.
+
+* Copyright / Permissions *
+
+Authors MAY use these textures in whatever add-ons they want, but please
+give me (Nick Baker) credit, and if possible notify me when you're level
+is released.
+
+* Where to get this WAD *
+
+http://haunt.8m.com/doom/
