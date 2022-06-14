@@ -1,0 +1,6 @@
+Submitted: XLightningStormL
+Decorate: XLightningStormL
+Sprites: ID Software, JoeyTD
+Sprite Edits: XLightningStormL
+Sounds: Generic Sound from somewhere, (taken from DooMRL Arsenal)
+Idea Base: Lack of a faithful Desert Eagle for Doom

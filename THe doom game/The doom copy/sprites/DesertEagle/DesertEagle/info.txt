@@ -1,0 +1,11 @@
+Name: Desert Eagle
+Class: Level 1
+Type: Hitscan
+Palette: Doom
+Summon: DesertEagle
+Ammotype: Clip
+AltFire: No
+Powered Mode: No
+Brightmaps: No
+Added States: No
+ACS: No

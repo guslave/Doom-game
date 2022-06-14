@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsasgfir.ogg-bc5e3ff366c32c38ea44dd4b3890475b.oggstr"
+
+[deps]
+
+source_file="res://sprites/AutoShotgunGuy/sounds/dsasgfir.ogg"
+dest_files=[ "res://.import/dsasgfir.ogg-bc5e3ff366c32c38ea44dd4b3890475b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
