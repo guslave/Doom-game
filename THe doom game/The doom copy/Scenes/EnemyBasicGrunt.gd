@@ -18,7 +18,8 @@ func _physics_process(delta):
 	pass
 
 func find_path(target):
-	path = nav.get_simple_path()
+	path = nav.get_simple_path(global_transform.origin)
+	
 	
 func death():
 	pass
