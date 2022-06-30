@@ -23,7 +23,7 @@
 [ext_resource path="res://sprites/AutoShotgunGuy/AutoShotgunGuy/SPRITES/asgzb1.png" type="Texture" id=21]
 [ext_resource path="res://sprites/AutoShotgunGuy/AutoShotgunGuy/SPRITES/asgzd1.png" type="Texture" id=22]
 [ext_resource path="res://sprites/AutoShotgunGuy/AutoShotgunGuy/SPRITES/asgzc1.png" type="Texture" id=23]
-[ext_resource path="res://Scenes/EnemyBasicGrunt.gd" type="Script" id=24]
+[ext_resource path="res://EnemyBasicGrunt.gd" type="Script" id=24]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
@@ -35,14 +35,19 @@ animations = [ {
 "name": "explode",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 22 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 19 ) ],
 "loop": true,
-"name": "Walking",
+"name": "shoot",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "hit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "Walking",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 17 ), ExtResource( 15 ), ExtResource( 18 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 6 ) ],
@@ -53,11 +58,6 @@ animations = [ {
 "frames": [ ExtResource( 20 ) ],
 "loop": true,
 "name": "Idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "shoot",
 "speed": 5.0
 } ]
 
@@ -73,6 +73,10 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform( 3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 0, -0.784592, 0 )
+centered = false
+offset = Vector2( -15.996, -9.66 )
+billboard = 2
 frames = SubResource( 2 )
-animation = "hit"
+animation = "Walking"
 script = ExtResource( 24 )

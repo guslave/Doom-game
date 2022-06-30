@@ -1,4 +1,4 @@
-extends AnimatedSprite3D
+extends KinematicBody
 
 onready var nav = get_tree().get_nodes_in_group("NavMesh")[0]
 onready var player = get_tree().get_nodes_in_group("Player")[0]
@@ -12,7 +12,9 @@ func _ready():
 	pass
 
 func take_damage(dmg_amount):
-	pass
+	health -= dmg_amount
+	if health <= 0:
+		death()
 
 func _physics_process(delta):
 	if path_index < path.size():
@@ -39,5 +41,5 @@ func death():
 	else:
 		$AnimatedSprite3D.play("die")
 
-func shoot(target):
+func shoot(_target):
 	pass
