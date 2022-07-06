@@ -7,10 +7,10 @@
 [node name="World" type="Spatial"]
 
 [node name="EnemyBasicGrunt" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 38.9276, 6.31125, -4.51491 )
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 21.4694, 6.31125, -4.51491 )
 
 [node name="test_room" parent="." instance=ExtResource( 1 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -5.38924, 2.96362, 2.29507 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 39.0744, 6.74733, -8.36252 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 18.1287, 8.64396, -4.5445 )

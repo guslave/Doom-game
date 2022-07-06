@@ -40,9 +40,9 @@ animations = [ {
 "name": "walking",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 16 ), ExtResource( 19 ) ],
+"frames": [ ExtResource( 14 ), ExtResource( 17 ), ExtResource( 15 ), ExtResource( 18 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 6 ) ],
 "loop": true,
-"name": "shoot",
+"name": "die",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 8 ) ],
@@ -55,9 +55,9 @@ animations = [ {
 "name": "explode",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 17 ), ExtResource( 15 ), ExtResource( 18 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 19 ) ],
 "loop": true,
-"name": "die",
+"name": "shoot",
 "speed": 5.0
 } ]
 

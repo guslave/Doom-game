@@ -1,17 +1,17 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Blender imports/actual test room.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/EnemyBasicGrunt.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/actual test room.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Blender imports/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/EnemyBasicGrunt.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Player.gd" type="Script" id=4]
 
-[node name="NewWOrld" type="Spatial"]
-
-[node name="Player" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2122, 2.31154, 0 )
-
-[node name="testroom" parent="." instance=ExtResource( 1 )]
-
-[node name="EnemyBasicGrunt" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.27709, 0 )
+[node name="NewWorld" type="Spatial"]
 script = ExtResource( 4 )
+
+[node name="EnemyBasicGrunt" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.39566, 4.69496, 0 )
+
+[node name="actual test room" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
