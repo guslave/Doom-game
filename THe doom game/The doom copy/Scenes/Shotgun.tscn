@@ -1,0 +1,92 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafj0.png" type="Texture" id=1]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafg0.png" type="Texture" id=2]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafb0.png" type="Texture" id=3]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafe0.png" type="Texture" id=4]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spaff0.png" type="Texture" id=5]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafa0.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Pistol.gd" type="Script" id=7]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafc0.png" type="Texture" id=8]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafh0.png" type="Texture" id=9]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafi0.png" type="Texture" id=10]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafd0.png" type="Texture" id=11]
+[ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafk0.png" type="Texture" id=12]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 20.0
+} ]
+
+[node name="Shotgun" type="Spatial"]
+script = ExtResource( 7 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+
+[node name="GunSprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
+position = Vector2( -344, 32 )
+rotation = 3.14159
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "shoot"
+frame = 4
+playing = true
+centered = false
+flip_v = true
+
+[node name="GunRays" type="Spatial" parent="."]
+
+[node name="RayCast" type="RayCast" parent="GunRays"]
+transform = Transform( 0.999965, 0.000327896, 0.0083012, 0, 0.999221, -0.0394691, -0.00830767, 0.0394677, 0.999186, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -20 )
+
+[node name="RayCast2" type="RayCast" parent="GunRays"]
+transform = Transform( 0.998205, 0, -0.0598813, -0.00278217, 0.99892, -0.046378, 0.0598166, 0.0464614, 0.997128, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -10 )
+
+[node name="RayCast3" type="RayCast" parent="GunRays"]
+transform = Transform( 0.999999, -0.000154977, -0.00145786, 0, 0.994397, -0.105709, 0.00146608, 0.105709, 0.994396, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -15 )
+
+[node name="RayCast4" type="RayCast" parent="GunRays"]
+transform = Transform( 0.999225, 0, 0.0393645, -0.00143491, 0.999335, 0.0364236, -0.0393383, -0.0364519, 0.998561, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -10 )
+
+[node name="RayCast5" type="RayCast" parent="GunRays"]
+transform = Transform( 0.99972, 0.00131851, -0.0236277, 0, 0.998447, 0.0557169, 0.0236645, -0.0557013, 0.998167, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -20 )
+
+[node name="RayCast6" type="RayCast" parent="GunRays"]
+transform = Transform( 1, 0, 0, 0, 0.997513, 0.0704877, 0, -0.0704877, 0.997513, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -10 )
+
+[node name="RayCast7" type="RayCast" parent="GunRays"]
+transform = Transform( 0.998291, 0, 0.0584352, 0, 1, 0, -0.0584352, 0, 0.998291, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -15 )
+
+[node name="RayCast8" type="RayCast" parent="GunRays"]
+enabled = true
+cast_to = Vector3( 0, 0, -10 )

@@ -1,0 +1,12 @@
+Name: Ultra Spas-12
+Class: 3
+Type: Hitscan
+Palette: Doom
+Summon: Spas
+Ammotype: Shell
+AltFire: Yes
+Powered Mode: No
+Brightmaps: No
+Actor Modification: No
+ACS: No
+

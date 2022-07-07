@@ -3,7 +3,7 @@ extends KinematicBody
 #basic vairables
 var velocity = Vector3()
 var gravity = -30
-var max_speed = 8
+var max_speed = 30
 var mouse_sensitivity = 0.002
 
 #gun variables

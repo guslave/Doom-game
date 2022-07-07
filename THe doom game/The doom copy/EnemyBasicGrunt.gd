@@ -1,11 +1,11 @@
 extends KinematicBody
 
 onready var nav = get_tree().get_nodes_in_group("NavMesh")[0]
-onready var player = get_tree().get_nodes_in_group("Player")[0]
+onready var Player = get_tree().get_nodes_in_group("Player")[0]
 
 var path = [] #hold the path coordinates from the enemy to the player
 var path_index = 0 #keep track of witch coordinate to go to
-var speed = 3
+var speed = 4
 var health = 20
 
 func _ready():
@@ -24,7 +24,7 @@ func _physics_process(_delta):
 		else:
 			move_and_slide(direction.normalized() * speed, Vector3.UP)
 	else:
-		find_path(player.global_transform.origin)
+		find_path(Player.global_transform.origin)
 
 func find_path(target):
 	path = nav.get_simple_path(global_transform.origin,target)
@@ -34,10 +34,11 @@ func death():
 	set_process(false)
 	set_physics_process(false)
 	$CollisionShape.disabled = true
-	if health < -20:
+	if health < -10:
 		$AnimatedSprite3D.play("explode")
 	else:
 		$AnimatedSprite3D.play("die")
+		
 
 func shoot(target):
 	pass

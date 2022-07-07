@@ -1,0 +1,6 @@
+Submitted: Wmafranz
+Zscript: Wmafranz
+GLDEFs: None
+Sprites: id Software, Wmafranz
+Sounds: id Software, Valve Software
+Base Idea: Half Life 2's Spas-12

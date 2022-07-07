@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsspasf1.ogg-68e5504239a584bf24e4bed8c51954b5.oggstr"
+
+[deps]
+
+source_file="res://sprites/UltraSpas-12/UltraSpas-12/sounds/dsspasf1.ogg"
+dest_files=[ "res://.import/dsspasf1.ogg-68e5504239a584bf24e4bed8c51954b5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
