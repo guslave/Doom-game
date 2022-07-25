@@ -1,0 +1,8 @@
+Name: Thunderbolt
+Class: 6
+Type: Hitscan
+Palette: Custom\Doom
+Summon: Thunderbolt
+Ammo Type: Cell
+Altfire: No
+Powered Mode: No

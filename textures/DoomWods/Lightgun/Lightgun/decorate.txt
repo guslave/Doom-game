@@ -1,0 +1,54 @@
+Actor LightninPuff : BulletPuff
+{
+	+PUFFONACTORS
+	+ALWAYSPUFF
+	Renderstyle Add
+	VSpeed 0
+	States
+	{
+	Spawn:
+		RZAP A 2 bright
+		RZAP B 2 bright A_playsound ("LHIT",0,0.5)
+		RZAP C 2 bright
+		RZAP D 2 bright
+		RZAP E 2 bright
+		RZAP F 2 bright
+		RZAP G 2 bright
+		RZAP H 2 bright
+		RZAP I 2 bright
+		Stop
+	Melee:
+		Goto Spawn
+	}	
+}
+
+ACTOR Thunderbolt : DoomWeapon
+{
+  Weapon.SelectionOrder 100
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 40
+  Weapon.AmmoType "Cell"
+  decal "PlasmaScorchLower1"
+  AttackSound "LStart"
+  Inventory.PickupMessage "You got the Thunderbolt!"
+  Tag "Thunderbolt"
+  States
+  {
+  Ready:
+    LGUN A 1 A_WeaponReady
+    Loop
+  Deselect:
+    LGUN A 1 A_Lower
+    Loop
+  Select:
+    LGUN A 1 A_Raise
+    Loop
+  Fire:
+    LGUN B 2 BRIGHT A_RailAttack(5, 0, 1, "None", "LightSteelBlue", RGF_FULLBRIGHT, 10, "LightninPuff",0,0,8192,5)
+    LGUN C 2 BRIGHT A_RailAttack(6, 0, 1, "None", "LightSteelBlue", RGF_SILENT|RGF_FULLBRIGHT, 10, "LightninPuff",0,0,8192,5)
+    Goto Ready
+  Spawn:
+    THBL A -1
+    Stop
+  }
+}

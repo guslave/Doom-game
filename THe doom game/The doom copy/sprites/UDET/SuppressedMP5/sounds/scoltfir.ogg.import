@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/scoltfir.ogg-702b7811a12d5997c959dac20eae5719.oggstr"
+
+[deps]
+
+source_file="res://sprites/UDET/SuppressedMP5/sounds/scoltfir.ogg"
+dest_files=[ "res://.import/scoltfir.ogg-702b7811a12d5997c959dac20eae5719.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

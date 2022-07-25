@@ -1,0 +1,39 @@
+Actor MP5 : Weapon
+{
+  Obituary "%o was gunned down by %k's MP5."
+  AttackSound "Weapons/MP5KFIR"
+  Inventory.PickupMessage "You got the MP5 submachine gun!"
+  Weapon.SlotNumber 4
+  Weapon.KickBack 100
+  Weapon.AmmoType "Clip"
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 20
+  Decal "BulletChip"
+  states
+  {
+  Ready:
+    MP5K A 1 A_WeaponReady
+    loop
+  Deselect: 
+    MP5K A 1 A_Lower
+    loop
+  Select:
+    MP5K A 1 A_Raise
+    loop
+  Fire:
+    MP5K A 0 A_ZoomFactor(0.99, ZOOM_NOSCALETURNING)
+    MP5F A 1 Bright A_FireBullets(3.6, 3.6, -1, 4, "BulletPuff")
+    MP5K A 1 A_SetPitch(Pitch-0.5)
+    MP5K B 0 A_ZoomFactor(1, ZOOM_NOSCALETURNING)
+    MP5F B 1 Bright A_FireBullets (3.6, 3.6, -1, 4, "BulletPuff")
+    MP5K A 1 A_SetPitch(Pitch-0.5)
+	MP5K A 0 A_ReFire
+    goto Ready
+  Flash:
+    TNT1 A 1
+    stop
+  Spawn:
+    MP5I A -1
+    stop
+  }
+}

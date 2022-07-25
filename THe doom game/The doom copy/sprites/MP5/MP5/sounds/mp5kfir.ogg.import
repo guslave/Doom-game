@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mp5kfir.ogg-9b92b5959a515a6d87580c8a57c71079.oggstr"
+
+[deps]
+
+source_file="res://sprites/MP5/MP5/sounds/mp5kfir.ogg"
+dest_files=[ "res://.import/mp5kfir.ogg-9b92b5959a515a6d87580c8a57c71079.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

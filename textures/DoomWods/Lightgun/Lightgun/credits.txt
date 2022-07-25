@@ -1,0 +1,7 @@
+Submitted: KILLA DIO
+Code: KILLA DIO
+GLDefs: N\A
+Sounds: Librequake Project
+Sprites: Librequake Project, ID Software, Banjo Software
+Sprite Edit: KILLA DIO
+Idea base: Quake Lightning gun

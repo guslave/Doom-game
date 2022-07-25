@@ -51,7 +51,7 @@ animations = [ {
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 11 ), ExtResource( 5 ), ExtResource( 2 ) ],
-"loop": true,
+"loop": false,
 "name": "explode",
 "speed": 5.0
 }, {
@@ -67,6 +67,7 @@ script = ExtResource( 24 )
 [node name="RayCast" type="RayCast" parent="."]
 
 [node name="Timer" type="Timer" parent="."]
+autostart = true
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
@@ -79,5 +80,7 @@ offset = Vector2( -15.996, -9.66 )
 billboard = 2
 frames = SubResource( 2 )
 animation = "walking"
-frame = 2
+frame = 3
 playing = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

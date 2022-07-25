@@ -1,0 +1,11 @@
+pointlight LIGHTNINGPUFF
+{
+    color 217 248 255
+    size 15
+}
+object LightninPuff
+{
+    frame RZAPA0 {light LIGHTNINGPUFF}
+	frame RZAPE0 {light LIGHTNINGPUFF}
+	frame RZAPH0 {light LIGHTNINGPUFF}
+}
