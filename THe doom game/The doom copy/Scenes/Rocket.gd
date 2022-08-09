@@ -24,7 +24,7 @@ func _on_Rocket_body_entered(body):
 	if body.is_in_group("Player"):
 		return
 	set_process(false)
-	$AnimatedSprite3D.play("Explode")
+	$AnimatedSprite3D.play("explode")
 	deal_damage(rocket_damage)
 	yield($AnimatedSprite3D,"animation_finished")
 	queue_free()

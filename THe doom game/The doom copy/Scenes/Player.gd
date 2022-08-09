@@ -10,7 +10,7 @@ var mouse_sensitivity = 0.002
 onready var pistol = preload("res://Scenes/Pistol.tscn")
 onready var shotgun = preload("res://Scenes/Shotgun.tscn")
 onready var MP5 = preload("res://Scenes/MP5.tscn")
-onready var Lightgun = preload("res://Scenes/Lightgun.tscn")
+onready var Lightgun = preload("res://Scenes/RocketLauncher.tscn")
 var current_gun = 0
 onready var carried_guns = [pistol,shotgun,MP5,Lightgun]
 
@@ -49,6 +49,7 @@ func change_gun(gun):
 	$Pivot/Gun.get_child(0).queue_free()
 	var new_gun = carried_guns[gun].instance()
 	$Pivot/Gun.add_child(new_gun)
+	PlayerStats.current_gun = new_gun.name
 	
 func _process(delta):
 	if Input.is_action_just_pressed("next_gun"):

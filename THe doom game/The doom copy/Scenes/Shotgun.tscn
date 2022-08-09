@@ -6,7 +6,7 @@
 [ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafe0.png" type="Texture" id=4]
 [ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spaff0.png" type="Texture" id=5]
 [ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafa0.png" type="Texture" id=6]
-[ext_resource path="res://Scenes/Pistol.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/Shotgun.gd" type="Script" id=7]
 [ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafc0.png" type="Texture" id=8]
 [ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafh0.png" type="Texture" id=9]
 [ext_resource path="res://sprites/UltraSpas-12/UltraSpas-12/SPRITES/spafi0.png" type="Texture" id=10]
@@ -45,7 +45,7 @@ rotation = 3.14159
 scale = Vector2( 2.77896, 2.77896 )
 frames = SubResource( 1 )
 animation = "shoot"
-frame = 2
+frame = 7
 playing = true
 centered = false
 flip_v = true

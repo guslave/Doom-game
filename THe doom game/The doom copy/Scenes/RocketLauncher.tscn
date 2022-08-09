@@ -1,25 +1,25 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://sprites/Lightgun/lguna0.png" type="Texture" id=1]
+[ext_resource path="res://sprites/Lightgun/lgunc0.png" type="Texture" id=1]
 [ext_resource path="res://sprites/Lightgun/lgunb0.png" type="Texture" id=2]
-[ext_resource path="res://sprites/Lightgun/lgunc0.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/Lightgun.gd" type="Script" id=4]
+[ext_resource path="res://sprites/Lightgun/lguna0.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/RocketLauncher.gd" type="Script" id=7]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "idle",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "shoot",
 "speed": 2.0
 } ]
 
-[node name="Pistol" type="Spatial"]
-script = ExtResource( 4 )
+[node name="RocketLauncher" type="Spatial"]
+script = ExtResource( 7 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
