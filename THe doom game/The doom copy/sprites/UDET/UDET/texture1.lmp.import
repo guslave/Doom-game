@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.palette"
+type="Resource"
+path="res://.import/texture1.lmp-ebdc94a79e8a00ef76b5ac12500e92c8.tres"
+
+[deps]
+
+source_file="res://sprites/UDET/UDET/texture1.lmp"
+dest_files=[ "res://.import/texture1.lmp-ebdc94a79e8a00ef76b5ac12500e92c8.tres" ]
+
+[params]
+
