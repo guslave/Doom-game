@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/the doom game copy map.map-240d14dcefcf30cf3ce87cc23caba2bd.tres"
+
+[deps]
+
+source_file="res://Maps/the doom game copy map.map"
+dest_files=[ "res://.import/the doom game copy map.map-240d14dcefcf30cf3ce87cc23caba2bd.tres" ]
+
+[params]
+
