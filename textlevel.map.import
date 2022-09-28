@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/textlevel.map-0f973e4a4f0656ecf8c2a93e392c2b9e.tres"
+
+[deps]
+
+source_file="res://Maps/textlevel.map"
+dest_files=[ "res://.import/textlevel.map-0f973e4a4f0656ecf8c2a93e392c2b9e.tres" ]
+
+[params]
+
